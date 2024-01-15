@@ -14,12 +14,15 @@ ng serve
 ng serve --port 9999
 nh --help
 
+[Project](http://localhost:4200/)
+
+[Github](https://github.com/dilaracakmakk/my-one-page)
+
+[Angular Github](https://github.com/angular/angular-cli) 
 
 
 
 
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
 
 ## Development server
 

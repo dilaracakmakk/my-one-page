@@ -1,18 +1,20 @@
 # MyOnePage
 
-node -v
-npm -v
-npm version 
-npm list -g
-npm install -g typescript
-npm install -g @angular/cli 
-ng version
-ng v
-ng new my-one-page
-cd my-one-page/
-ng serve
-ng serve --port 9999
-ng --help
+# Kurulumlar
+> node -v
+> npm -v
+> npm version
+> npm list -g
+> npm install -g typescript
+> npm install -g @angular/cli
+> ng version
+> ng v
+> ng new one-page
+> cd one-page/
+> ng serve
+> ng serve --port 9999  0<=PORT<=65535 PORT<=1024 
+> ng --help
+
 
 [Project](http://localhost:4200/)
 
@@ -25,16 +27,45 @@ ng --help
  Script
 npm run start npm run nodemon npm run nodemon_q
 
-Npm Komutları
+# Npm Komutları
 node -v
 npm  -v
 
-# package.json oluşturmak dikkat proje ismi: 
-# 1- küçük harflerle
-# 2- boşluklar olmamalıdır bunun yerine (-) 
-# 3- üğşçö kullanma
+# Proje Serve
+> npm list -g
+> npm install -g typescript
+> npm install -g @angular/cli
+> ng serve
+> ng serve --port 9999
+
+# Angular CLI Hazır Bileşenler
+ng generate component onepage-header
+ng g component onepage-header 
+ng g component onepage-main 
+ng g component onepage-footer
+ng g service onepage-service 
+ng g module onepage-module 
+ng g pipe onepage-pipeline 
+ng g directive onepage-pipeline 
+ng g interface onepage-pipeline 
+ng g enum onepage-pipeline
+
+
+
+# Angular NPM Kurulumları
+npm install bootstrap
+npm install font-awesome angular-font-awesome
+npm install jquery
+npm install popper
+npm install alertifyjs
+npm i
+npm update
+npm uninstall modulAdi
 npm init 
 npm init -y
+
+# Script
+npm run start npm run nodemon npm run nodemon_q
 
 # package.json içindeki kütüphaneleri proje dahil etmek için kullanıyoruz.
 npm install 
@@ -81,7 +112,9 @@ npm update express
 
 npm doctor 
 npm audit
-Nodemon
+
+
+# Nodemon
 Nodemon: Node Monitoring
 
 node template.js

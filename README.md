@@ -30,9 +30,9 @@ node -v
 npm  -v
 
 # package.json oluşturmak dikkat proje ismi: 
-# 1-) küçük harflerle
-# 2-) boşluklar olmamalıdır bunun yerine (-) 
-# 3-) üğşçö kullanma
+# 1- küçük harflerle
+# 2- boşluklar olmamalıdır bunun yerine (-) 
+# 3- üğşçö kullanma
 npm init 
 npm init -y
 

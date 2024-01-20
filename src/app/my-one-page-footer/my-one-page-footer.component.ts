@@ -9,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class MyOnePageFooterComponent {
 
+constructor(){
+  console.log('One Page Footer Component');
+}
+
+
+//method
+newDateData():string{
+return String (new Date().getFullYear());
+}
+
+
+
 }

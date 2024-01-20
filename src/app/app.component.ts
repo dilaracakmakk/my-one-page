@@ -6,11 +6,21 @@ import {OnepageHeaderComponent } from './onepage-header/onepage-header.component
 import {MyOnePageMainComponent } from './my-one-page-main/my-one-page-main.component';
 import { MyOnePageFooterComponent } from './my-one-page-footer/my-one-page-footer.component';
 import { MyonepageProjectNameComponent } from './myonepage-project-name/myonepage-project-name.component';
+import { MyOnePageNavbarComponent } from './my-one-page-navbar/my-one-page-navbar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,OnepageHeaderComponent,MyOnePageMainComponent,MyOnePageFooterComponent,MyonepageProjectNameComponent],
+  imports: [
+    CommonModule, 
+    RouterOutlet,
+    OnepageHeaderComponent,
+    MyOnePageMainComponent,
+    MyOnePageFooterComponent,
+    MyonepageProjectNameComponent,
+    MyOnePageNavbarComponent,
+  ],
+
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

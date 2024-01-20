@@ -28,7 +28,7 @@ export class MyOnePageNavbarComponent {
     logo:{
     logoName:'Logo',
     logoFontAwesome:'fa-regular fa-heart',
-    logoPicture:'image.png',
+    logoPicture:'https://pixabay.com/tr/illustrations/kakt%C3%BCs-sulu-model-bah%C3%A7e-bahar-8250996/',
     logoLink:'/',
     logoTitle:'Title',
   },

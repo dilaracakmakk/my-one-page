@@ -8,10 +8,17 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     CommonModule,
   ],
   //templateUrl: './myonepage-header.component.html'
-  template: `<div>
-  Project Name: <span class="text-primary">My One Page</span>  
-  <br>
-  Merhabalar :) <span class="text-primary">Dilara - Çakmak</span>  </div>
+  template: `
+  <div>
+    <ul class="list-group list-group-numbered">
+      <li class="list-group-item active"> {{ projectName}}</li>
+      <li class="list-group-item"> {{name}} {{surname}}</li>
+      <li class="list-group-item"> {{projectAuthor }}</li>
+      <li class="list-group-item"> {{projectVersion }}</li>
+      <li class="list-group-item"> {{projectYear }}</li>
+      <li class="list-group-item"> {{ projectKeywords}}</li>
+</ul>
+   </div>
 <hr/>`,
   styleUrl: './myonepage-project-name.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -1,0 +1,19 @@
+
+
+:root{
+    --my_one_page_bg:"black";
+    --my_one_page_color:"white";
+}
+*{
+    margin: 0;
+    padding:0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--my_one_page_bg);
+
+}

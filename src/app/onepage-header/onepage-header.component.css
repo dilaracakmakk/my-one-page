@@ -1,8 +1,10 @@
 #header_id{
-    margin-top:5rem;
 background-image: url('../../images/ai-generated-8245177_1280.jpg');
-height:60vh;
+height:80vh;
 background-size: cover;
+background-position: center;
+z-index: -1;
+padding-top: 20rem;
 }
 #back_to_top_id{
     position: fixed;

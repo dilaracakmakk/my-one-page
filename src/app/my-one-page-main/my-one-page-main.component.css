@@ -30,7 +30,7 @@ background-color:  rgb(171, 171, 227);
 color: white!important;
 height: 30rem;
 padding: 3rem;
-background-image: url('../../images/universe.jpg');
+background-image: url('../../images/back.jpg');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -38,9 +38,9 @@ background-attachment:fixed ;
 
 }
 
-#blog_id {
+/* #blog_id {
 
-  }
+  } */
 #contact_id {
   background-color: rgb(182, 147, 200);
   }

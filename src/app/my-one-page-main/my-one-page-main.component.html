@@ -2,8 +2,7 @@
     <main>
 <!-- about me  -->
 <section id="about_me_id">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum cupiditate aut illo excepturi tempore impedit magnam corporis velit suscipit quaerat deserunt corrupti commodi ut, iste voluptatem voluptate eum culpa!
-    Ab inventore at soluta alias repellendus porro non earum. Perspiciatis nemo quisquam facere necessitatibus ad, harum quis minus iste magni dolore ipsum aut rem atque, voluptatem officia exercitationem quibusdam error!
+<h2 class="text-center display-4 text-primary mb-4 mb-4 ">{{MyOnePageContent[0].title | uppercase}}</h2>
     
 </section>
 
@@ -14,12 +13,13 @@
 
 <section id="blog_id">
 
+<h2 class="text-center display-4 text-primary mb-4 mb-4 ">{{MyOnePageContent[1].title | uppercase}}</h2>
+
+
 <ng-container *ngIf="blogCard; then blog; else noBlogCard"></ng-container>
 
-
-
-
 <ng-template #blog>
+
     <div class="container">
         <div class="row">
 
@@ -76,6 +76,8 @@
 
 <!-- contact me  -->
 <section id="contact_id"></section>
+<h2 class="text-center display-4 text-primary mb-4 mb-4 ">{{MyOnePageContent[2].title | uppercase}}</h2>
+
 
     </main>
 

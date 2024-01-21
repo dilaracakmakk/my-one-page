@@ -15,12 +15,6 @@ export class MyOnePageNavbarComponent {
 username:String="Dilara Çakmak";
 
 
-// id:number;
-// username:string;
-// email:string;
-// pictures:string;
-// date:string;
-// link:string;
 
 User: User[]=[
   {
@@ -71,7 +65,7 @@ User: User[]=[
     };
   
     navbar:Array<any>;
-    search:{};
+    // search:{};
   }={
   
     isLogin:true,
@@ -89,10 +83,12 @@ User: User[]=[
       {id:1,name:"Blog",link:"/blog",fontAwesome:"font-3"},
       {id:1,name:"Contact",link:"/contact",fontAwesome:"font-4"},
     ],
-    search:{
-      name:"Search",
-      placeholder:"Search",
-      type:"text",
-    }
+    // search:{
+    //   name:"Search",
+    //   placeholder:"Search",
+    //   type:"text",
+    // }
   }; 
+
+
 }

@@ -33,23 +33,24 @@
                         <span class="visually-hidden">(current)</span></a
                     >
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href={{navBar.navbar[1].link}}>
-                        {{navBar.navbar[1].name}}
+                        {{navBar.navbar[1].name | uppercase  }}
 
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href={{navBar.navbar[2].link}}>
-                        {{navBar.navbar[2].name}}
+                        {{navBar.navbar[2].name | uppercase}}
 
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href={{navBar.navbar[3].link}}>
-                        {{navBar.navbar[3].name}}
+                        {{navBar.navbar[3].name | uppercase}}
 
                     </a>
                 </li>
@@ -63,8 +64,8 @@
     <li class="nav-item">
 
         <a class="nav-link" href="#">
-            <span [hidden]="User[0].rolles!='ADMIN'">{{User[0].rolles}}</span>
-            <span>Hoşgeldiniz  {{User[0].username}} :)</span>
+            <span class="me-2" [hidden]="User[0].rolles!='ADMIN'"> {{User[0].rolles | uppercase}}</span>
+            <span>HOŞGELDİN!  {{User[0].username | uppercase}} :)</span>
              
 
         </a>
@@ -97,19 +98,19 @@
 
                 
             </ul>
-             <form class="d-flex my-2 my-lg-0">
-                <input
+             <!-- <form class="d-flex my-2 my-lg-0"> -->
+                <!-- <input
                     class="form-control me-sm-2"
                     type="text"
                     placeholder="Search"
-                /> 
+                />  -->
                 <button
                     class="fa-regular fa-heart"
                     type="submit"
                 >
                   
                 </button>
-             </form> 
+             <!-- </form>  -->
         </div>
     </div>
 </nav>

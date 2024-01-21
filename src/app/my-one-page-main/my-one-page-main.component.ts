@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { blogCard } from './BlogCard';
+import { MyOnePageContent } from './my-one-page-content';
 
 @Component({
   selector: 'app-my-one-page-main',
@@ -11,6 +12,17 @@ import { blogCard } from './BlogCard';
 })
 export class MyOnePageMainComponent {
 //field
+
+MyOnePageContent:MyOnePageContent[]=[
+  {id:1, title:"about"},
+  {id:2, title:"blog"},
+  {id:3, title:"contact"},
+     
+
+ 
+];
+
+
 
 blogCard:blogCard[]=[
   {id:1, title:"Title-1", text:"Text-1", description:"Description-1", picture:"https://cdn.pixabay.com/photo/2016/01/09/18/27/camera-1130731_1280.jpg",date: String(new Date().getFullYear()),link:'https://deneme/',},

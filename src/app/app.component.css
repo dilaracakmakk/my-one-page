@@ -3,6 +3,7 @@
 :root{
     --my_one_page_bg:"black";
     --my_one_page_color:"white";
+    
 }
 *{
     margin: 0;

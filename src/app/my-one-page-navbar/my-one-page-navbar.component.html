@@ -53,42 +53,61 @@
 
                     </a>
                 </li>
-                <!-- <li class="nav-item dropdown">
-                    <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="dropdownId"
-                        data-bs-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                        >Dropdown</a
-                    >
-                    <div
-                        class="dropdown-menu"
-                        aria-labelledby="dropdownId"
-                    >
-                        <a class="dropdown-item" href="#"
-                            >Action 1</a
-                        >
-                        <a class="dropdown-item" href="#"
-                            >Action 2</a
-                        >
-                    </div>
-                </li> -->
+
+<ng-container *ngIf="navBar.isLogin; then loggedIn; else loggedOut" >
+
+</ng-container>
+
+<!-- login ture ise -->
+<ng-template #loggedIn>
+    <li class="nav-item">
+
+        <a class="nav-link" href="#">
+            {{User[0].rolles}} Hoşgeldiniz  {{User[0].username}} :)
+
+        </a>
+    </li>
+</ng-template>
+
+<!-- login false ise -->
+<ng-template #loggedOut>
+    <li class="nav-item dropdown">
+        <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="dropdownId"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Login/Register</a>
+        <div
+            class="dropdown-menu"
+            aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="#"
+                >Login</a>
+            <a class="dropdown-item" href="#"
+                >Register</a>
+        </div>
+    </li> 
+</ng-template>
+
+
+
+                
             </ul>
-            <!-- <form class="d-flex my-2 my-lg-0">
+             <form class="d-flex my-2 my-lg-0">
                 <input
                     class="form-control me-sm-2"
                     type="text"
                     placeholder="Search"
-                /> -->
+                /> 
                 <button
                     class="fa-regular fa-heart"
                     type="submit"
                 >
                   
                 </button>
-            <!-- </form> -->
+             </form> 
         </div>
     </div>
 </nav>

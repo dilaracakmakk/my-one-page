@@ -8,7 +8,18 @@
 </section>
 
 <!-- blog me  -->
+
+<!-- BlogCard: varsaa 
+!BlogCard: yoksa -->
+
 <section id="blog_id">
+
+<ng-container *ngIf="blogCard; then blog; else noBlogCard"></ng-container>
+
+
+
+
+<ng-template #blog>
     <div class="container">
         <div class="row">
 
@@ -34,6 +45,32 @@
 
         </div>
     </div>
+</ng-template>
+
+<ng-template #noBlogCard>
+    <form action="#">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <input type="text" 
+                    title="blog ara" 
+                    placeholder="blog ara"
+                    class="form-control mb-3"/></div>
+                <div class="col-md-2"><button class="btn btn-primary">Ara</button>
+                </div>
+    <div class="alert alert-primary mt-2">blog yoktur</div>
+
+            </div>
+        </div>
+
+
+    </form>
+</ng-template>
+
+
+
+
+
 </section>
 
 

@@ -16,5 +16,26 @@ html{
 body{
     font-family: 'Raleway', sans-serif;
     background-color: var(--my_one_page_bg);
+    background-color: var(--my_one_page_color);
 
+}
+/* p{
+
+} */
+
+
+ul{
+list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.line-clamp5{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }

@@ -14,6 +14,36 @@ img:hover{
     clear: both;
     display: table;
 }
+.line-clamp4{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#business_id i{
+  font-size: 5rem;
+}
+
+#about_me_id{
+background-color:  rgb(171, 171, 227);
+color: white!important;
+height: 30rem;
+padding: 3rem;
+background-image: url('../../images/universe.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment:fixed ;
+
+}
+
+#blog_id {
+
+  }
+#contact_id {
+  background-color: rgb(182, 147, 200);
+  }
 
 .container {
     padding: 20px; 

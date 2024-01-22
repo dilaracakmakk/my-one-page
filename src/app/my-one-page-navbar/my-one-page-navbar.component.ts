@@ -1,18 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { User, userRolles } from './User';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-my-one-page-navbar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './my-one-page-navbar.component.html',
   styleUrl: './my-one-page-navbar.component.css'
 })
 export class MyOnePageNavbarComponent {
-  homePage:String ='Ana Sayfa44';
+  // homePage:String ='Ana Sayfa';
 
-username:String="Dilara Çakmak";
+// username:String="Dilara Çakmak";
 
 
 
@@ -72,7 +73,7 @@ User: User[]=[
     logo:{
     logoName:'Logo',
     logoFontAwesome:'fa-regular fa-heart',
-    logoPicture:'https://pixabay.com/tr/illustrations/kakt%C3%BCs-sulu-model-bah%C3%A7e-bahar-8250996/',
+    logoPicture:'https://cdn.pixabay.com/photo/2017/05/03/23/04/plasma-ball-2282449_1280.jpg',
     logoLink:'/',
     logoTitle:'Title',
   },
@@ -89,6 +90,8 @@ User: User[]=[
     //   type:"text",
     // }
   }; 
+
+  constructor(){}
 
 
 }

@@ -1,5 +1,4 @@
-<nav id="navbar_id" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark"
->
+<nav id="navbar_id" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
     <div class="container">
         <!-- <a class="navbar-brand" href="#">{{navBar.logo.logoName}}</a> -->
         <!-- <img src="deneme.png" alt=""> -->
@@ -8,6 +7,8 @@
             <i [class]="navBar.logo.logoFontAwesome"></i>
             <!-- <img class="rounded-circle w-25" [src]="navBar.logo.logoPicture" alt=""> -->
         </a>
+
+        
         <button
             class="navbar-toggler d-lg-none"
             type="button"
@@ -15,8 +16,7 @@
             data-bs-target="#collapsibleNavId"
             aria-controls="collapsibleNavId"
             aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
+            aria-label="Toggle navigation" >
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -60,38 +60,49 @@
 </ng-container>
 
 <!-- login ture ise -->
-<ng-template #loggedIn>
-    <li class="nav-item">
-
-        <a class="nav-link" href="#">
-            <span class="me-2" [hidden]="User[0].rolles!='ADMIN'"> {{User[0].rolles | uppercase}}</span>
-            <span>HOŞGELDİN!  {{User[0].username | uppercase}} :)</span>
-             
-
-        </a>
-    </li>
+<ng-template #loggedIn class="d-flex align-items-end">
+    <div class="dropdown dropleft me-2">
+        <img src="https://cdn.pixabay.com/photo/2017/05/03/23/04/plasma-ball-2282449_1280.jpg"
+        class="rounded-circle"
+        height="55"
+        alt="logo"
+        loading="lazy"
+        id="triggerId"
+        data-bs-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"/>
+    
+        <div class="dropdown-menu dropdown-menu-end" 
+        aria-labelledby="triggerId">
+    <a class="dropdown-item" href="#">My Profile</a>
+    <a class="dropdown-item" href="#">Settings</a>
+    <a class="dropdown-item" href="#">Logout</a>
+    <a class="dropdown-item" href="#">Action</a>
+</div>
+</div>
 </ng-template>
+
+
 
 <!-- login false ise -->
 <ng-template #loggedOut>
-    <li class="nav-item dropdown">
-        <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="dropdownId"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >Login/Register</a>
-        <div
-            class="dropdown-menu"
-            aria-labelledby="dropdownId">
-            <a class="dropdown-item" href="#"
-                >Login</a>
-            <a class="dropdown-item" href="#"
-                >Register</a>
+    <div class="btn-group">
+        <button class="btn btn-info dropdown-toggle" 
+        type="button" id="triggerId" 
+        data-bs-toggle="dropdown" 
+        aria-haspopup="true" 
+        aria-expanded="false">
+            Login
+        </button>
+
+        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="triggerId">
+            <a class="btn btn-info" routerLink="/about">About</a>
+            <a class="dropdown-item" routerLink="/about">Login</a>
+            <a class="dropdown-item" routerLink="/about">Header</a>
+            <a class="dropdown-item" routerLink="/about">Action</a>
+            <div class="dropdown-divider"></div>
         </div>
-    </li> 
+    </div>
 </ng-template>
 
 
@@ -115,6 +126,6 @@
     </div>
 </nav>
  <!-- back to top -->
-<a id="back_to_top_id" href="#navbar_id" class="back-to-top d-flex align-items-center justify-content-center">
+ <a id="back_to_top_id" href="#navbar_id" class="back-to-top d-flex align-items-center justify-content-center">
     <i class="bi bi-arrow-up-short"></i> 
 </a>

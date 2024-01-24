@@ -3,11 +3,11 @@
 <div class="jumbotron text-white">
   <div class="container">
     <div class="text-center p-5">
-      <h1 class="text-uppercase shadow" style="color: white;">SOCIAL</h1>
+      <h1 class="text-uppercase shadow">{{header}}</h1>
       <div id="header_social" class="mt-4 mb-3">
-      <a href="" class="btn btn-info me-2">Linkedin</a>
-      <a href="" class="btn btn-info me-2">Github</a>
-      <a href="" class="btn btn-info">Behance</a>
+        <span *ngFor="let temp of socialContent">
+      <a [href]="temp.link" [class]="temp.classSocial"><i [class]="temp.icon"></i></a>
+    </span>
     </div>
   </div>
 </div>

@@ -69,7 +69,7 @@ User: User[]=[
     // search:{};
   }={
   
-    isLogin:true,
+    isLogin:false,
     logo:{
     logoName:'Logo',
     logoFontAwesome:'',
@@ -79,10 +79,11 @@ User: User[]=[
   },
   
     navbar:[
-      {id:1,name:"Anasayfa",link:"/anasayfa",fontAwesome:"font-1"},
-      {id:2,name:"My Work",link:"#business_id",fontAwesome:"font-1"},
-      {id:3,name:"AboutMe",link:"#about_me_id",fontAwesome:"font-2"},
-      {id:4,name:"Blog",link:"#blog_id",fontAwesome:"font-3"},
+      {id:1,name:"Home",link:"/anasayfa",fontAwesome:"font-1"},
+      {id:2,name:"My Work",link:"#business_id",fontAwesome:"font-2"},
+      {id:3,name:"AboutMe",link:"#about_me_id",fontAwesome:"font-3"},
+      {id:4,name:"Blog",link:"#blog_id",fontAwesome:"font-4"},
+      {id:5,name:"Contact",link:"#contact_id",fontAwesome:"font-5"},
     ],
     // search:{
     //   name:"Search",

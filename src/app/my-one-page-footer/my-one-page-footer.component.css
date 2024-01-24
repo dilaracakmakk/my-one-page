@@ -1,9 +1,14 @@
 #footer_id{
-    background-color: black;
-    color:white;
-    height: 10rem;
+    height: 45rem;
     text-align: center;
-    padding: 4rem;
-    height: 10rem;
+    padding: 6rem;
     width: 100%;
+
+color: white!important;
+background-image: url('https://cdn.pixabay.com/photo/2021/02/02/21/56/street-5975602_1280.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-attachment:fixed ;
+background-size: cover;
+border-radius: 80px;
 }

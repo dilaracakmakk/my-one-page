@@ -27,14 +27,15 @@ img:hover{
 }
 
 #about_me_id{
-background-color:  rgb(171, 171, 227);
 color: white!important;
-height: 60rem;
-padding: 5rem;
+height: 50rem;
+padding: 2rem;
 background-image: url('../../images/back.jpg');
+width: 100%;
 background-position: center;
 background-repeat: no-repeat;
 background-attachment:fixed ;
+background-size: cover;
 border-radius: 80px;
 
 }
@@ -42,9 +43,6 @@ border-radius: 80px;
 /* #blog_id {
 
   } */
-#contact_id {
-  background-color: rgb(182, 147, 200);
-  }
 
 .container {
     padding: 20px; 

@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { blogCard } from './BlogCard';
 import { MyOnePageContent } from './my-one-page-content';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-my-one-page-main',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,RouterLink],
   templateUrl: './my-one-page-main.component.html',
   styleUrl: './my-one-page-main.component.css'
 })

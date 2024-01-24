@@ -22,16 +22,10 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href={{navBar.navbar[0].link}} aria-current="page"
-                        >
-                        <!-- {{homePage}} -->
+                    <a class="nav-link" href={{navBar.navbar[1].link}}>
+                        {{navBar.navbar[0].name | uppercase  }}
 
-                        <!-- {{navBar.navbar[0].name}} -->
-                        <!-- property binding yaparsak: <i class='fa-solid fa-house-chimney'></i> -->
-                        <!-- <i class="{{navBar.navbar[0].fontAwesome}}"></i> -->
-                        <i [class]='navBar.navbar[0].fontAwesome'></i>
-                        <span class="visually-hidden">(current)</span></a
-                    >
+                    </a>
                 </li>
 
                 <li class="nav-item">
@@ -61,10 +55,10 @@
 
 <!-- login ture ise -->
 <ng-template #loggedIn class="d-flex align-items-end">
-    <div class="dropdown dropleft me-2">
+    <div class="dropdown dropleft  me-2">
         <img src="https://cdn.pixabay.com/photo/2017/05/03/23/04/plasma-ball-2282449_1280.jpg"
         class="rounded-circle"
-        height="55"
+        height="45"
         alt="logo"
         loading="lazy"
         id="triggerId"
@@ -77,7 +71,6 @@
     <a class="dropdown-item" href="#">My Profile</a>
     <a class="dropdown-item" href="#">Settings</a>
     <a class="dropdown-item" href="#">Logout</a>
-    <a class="dropdown-item" href="#">Action</a>
 </div>
 </div>
 </ng-template>
@@ -117,15 +110,16 @@
                 />  -->
                 <button
                     class="fa-regular fa-heart"
-                    type="submit"
-                >
-                  
+                    type="submit">
+                  HELLO IT'S ME, DILARA!
                 </button>
              <!-- </form>  -->
         </div>
     </div>
 </nav>
  <!-- back to top -->
- <a id="back_to_top_id" href="#navbar_id" class="back-to-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i> 
+ <a id="back_to_top_id" 
+ href="#navbar_id" 
+ class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
 </a>

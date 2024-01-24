@@ -72,17 +72,17 @@ User: User[]=[
     isLogin:true,
     logo:{
     logoName:'Logo',
-    logoFontAwesome:'fa-regular fa-heart',
+    logoFontAwesome:'',
     logoPicture:'https://cdn.pixabay.com/photo/2017/05/03/23/04/plasma-ball-2282449_1280.jpg',
     logoLink:'/',
     logoTitle:'Title',
   },
   
     navbar:[
-      {id:1,name:"Anasayfa",link:"/anasayfa",fontAwesome:"fa-solid fa-house-chimney"},
-      {id:1,name:"AboutMe",link:"/about-me",fontAwesome:"font-2"},
-      {id:1,name:"Blog",link:"/blog",fontAwesome:"font-3"},
-      {id:1,name:"Contact",link:"/contact",fontAwesome:"font-4"},
+      {id:1,name:"Anasayfa",link:"/anasayfa",fontAwesome:"font-1"},
+      {id:2,name:"My Work",link:"#business_id",fontAwesome:"font-1"},
+      {id:3,name:"AboutMe",link:"#about_me_id",fontAwesome:"font-2"},
+      {id:4,name:"Blog",link:"#blog_id",fontAwesome:"font-3"},
     ],
     // search:{
     //   name:"Search",

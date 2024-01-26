@@ -11,7 +11,7 @@ export class blogCard{
     link:string;
 
     //constructor
-    constructor(id:number,title:string, text:string, description:string,picture:string,date:string,link:string){
+constructor(id:number,title:string, text:string, description:string,picture:string,date:string,link:string){
 this.id=id;
 this.title=title;
 this.text=text;

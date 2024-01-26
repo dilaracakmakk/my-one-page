@@ -1,1 +1,63 @@
-<p>my-one-page-blog-page works!</p>
+<section id="blog_id">
+    <a href="/blog">
+    <h2 class="text-center display-4  mb-4 mb-4 ">BLOG</h2>
+    </a>
+    <!-- {{MyOnePageContent[2].title | uppercase}} -->
+    <ng-container *ngIf="blogCard; then blog; else noBlogCard"></ng-container>
+    
+    <ng-template #blog>
+    
+    
+    
+    
+        <div class="container">
+            <div class="row">
+                <div *ngFor="let temp of blogCard" class="col-sm-12 col-md-3 col-lg-4">
+                    
+                    <div class="card mb-3">
+                        <img class="card-img-top" 
+                        [src]="temp.picture"
+                         alt="photo"/>
+                        <div class="card-body">
+                            <!-- <h4 class="card-title">{{temp.id}}</h4> -->
+                            <p class="card-text">{{temp.title}}</p>
+                            <p class="card-text">{{temp.description}}</p>
+                            <span class="text-muted float-end">{{temp.date | date:"fullDate"}}</span>
+                        <!-- <a [href]="temp.link" | class="btn btn-info">Show Details</a> -->
+                        <!-- <a (click)="showDetails()" href="temp." class="btn btn-info"></a> -->
+                        <!-- <button class="btn btn-info" (click)="showDetails()">Show Details</button> -->
+                        </div>
+                    </div>
+                </div>
+           
+               
+    
+            </div>
+        </div>
+    </ng-template>
+    
+    <ng-template #noBlogCard>
+        <form action="#">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <input type="text" 
+                        title="blog ara" 
+                        placeholder="blog ara"
+                        class="form-control mb-3"/></div>
+                    <div class="col-md-2"><button class="btn btn-primary">Ara</button>
+                    </div>
+        <div class="alert alert-primary mt-2">blog yoktur</div>
+    
+                </div>
+            </div>
+    
+    
+        </form>
+    </ng-template>
+    
+    
+    
+    
+    
+    </section>

@@ -4,26 +4,44 @@ export enum userRolles{
     user='USER',
 }
 
-abstract class Person{
-    id:number;
+export interface IUser{
+    name:string;
+    surname:string;  
     username:string;
-    password:string;
     email:string;
+    password:string;
+    
+
+}
+
+abstract class Person implements IUser{
+    id:number;
     pictures:string;
     date:string;
     link:string;
 
+  
+    name: string;
+    surname: string;
+    username: string;
+    email: string;
+    password: string;
+
     constructor(
         id:number,
-        username:string,
-        password:string,
-        email:string,
+        name: string,
+        surname: string,
+        username: string,
+        password: string,
+        email: string,
         pictures:string,
         date:string,
         link:string
     ){
         this.id=id;
+        this.name=name;
         this.username=username;
+        this.surname=surname;
         this.password=password;
         this.email=email;
         this.pictures=pictures;
@@ -31,22 +49,15 @@ abstract class Person{
         this.link=link;
 
     }
-
-    // personInformation():void{
-    //     console.log("Gövdeli Method");
-    // }
-
-
 }
-
-
 export class User extends Person {
-  
-    // rolles:Array<any>;
+    
     rolles:string;
 
     constructor(
         id:number,
+        name:string,
+        surname:string,
         username:string,
         password:string,
         email:string,
@@ -55,7 +66,7 @@ export class User extends Person {
         link:string,
         rolles:string
         ){
-           super(id,username,email,password,pictures,date,link);
+           super(id,name,surname,username,email,password,pictures,date,link);
             this.rolles=rolles;
 
         }

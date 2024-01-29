@@ -1,14 +1,20 @@
 
 
 :root{
-    --my_one_page_bg:"black";
-    --my_one_page_color:"white";
+    --my_one_page_bg:rgb(0, 0, 0);
+    --my_one_page_color:black;
     
 }
 *{
-    margin: 0;
-    padding:0px;
-    box-sizing: border-box;
+   padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+            list-style: none;
+            text-decoration: none;
+            scroll-behavior: smooth;
+            border: none;
+            outline: none;
 }
 html{
     font-size: 15px;
@@ -19,9 +25,6 @@ body{
     background-color: var(--my_one_page_color);
 
 }
-/* p{
-
-} */
 
 
 ul{

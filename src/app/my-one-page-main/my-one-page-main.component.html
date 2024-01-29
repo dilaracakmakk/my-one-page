@@ -11,8 +11,8 @@
                     <i class="fa-solid fa-code" style="font-size: 40px;"></i>
                     <h4 style="font-family: 'Raleway', sans-serif; font-size: 20px;">Frontend</h4>   
                     <p style="font-family: 'Raleway', sans-serif; font-size: 16px; margin-top: 80px;">My job is to design and develop front end. 
-                        I have a lot of work that I do as front end. I have worked with HTML5, CSS3, Tailwind, Bootstrap and I can use them actively.
-                        
+                        I have a lot of work that I do as front end. I have worked with HTML5, CSS3, Tailwind, Bootstrap and I can use them actively.</p>
+                        <button class="s-btnn">Read More</button>                        
                
                     </div>
             </div>
@@ -23,7 +23,8 @@
                     <i class="fa-solid fa-computer" style="font-size: 40px;"></i>
                     <h4 style="font-family: 'Raleway', sans-serif; font-size: 20px;">Backend</h4>   
                     <p style="font-family: 'Raleway', sans-serif; font-size: 16px; margin-top: 80px;">While developing projects, I generally worked as frontend - backend. Languages I know as backend: Java, C#, C, Python, Javascript, Typescript.
-                         In my graduation project: I created a website with an admin panel using .NET.
+                         In my graduation project: I created a website with an admin panel using .NET.</p>
+                         <button class="s-btnn">Read More</button>                        
                 
                         </div>
             </div>
@@ -35,10 +36,13 @@
                     <i class="fa-solid fa-laptop-code" style="font-size: 40px;" ></i>
                     <h4 style="font-family: 'Raleway', sans-serif; font-size: 20px;">UI-UX</h4>   
                     <p style="font-family: 'Raleway', sans-serif; font-size: 16px; margin-top: 80px;">Frontend design is a passion for me. I love doing frontend design, and I also love spending time while designing. 
-                        That's why I also learned UI-UX design and shared it on my Behance profile.
-                       
+                        That's why I also learned UI-UX design and shared it on my Behance profile.</p>
+                                            
+                  
+                        <button class="s-btnn">Read More</button>                        
                 
                     </div>
+                  
             </div>
                
             </div>
@@ -46,28 +50,30 @@
         
         </section>
       
-        
-<!-- about me  -->
 <section id="about_me_id" style="opacity: 90%;">
-    <div class="about-img">
-    <img src="https://cdn.pixabay.com/photo/2023/12/04/17/24/evening-8429871_1280.jpg" style="margin-left: 250px; border-radius: 50%; width: 800px; height: 700px;">
-</div>
-    <h2 class="text-center  display-4  mb-4 mb-4 "></h2>
+    <div class="responsive-container">
+        <img src="https://andcowoman.com/wp-content/uploads/2022/05/1W5A5437-scaled.jpg" class="responsive">
+          </div>
+        
 
-    <p  style="font-size: 4rem; font-weight: bold; text-align: right;margin-right: auto; margin-top: -600px; font-family: 'Raleway', sans-serif; font-size: 80px;">About me</p>  
-    <p style="font-size: 20px; margin-right: auto; margin-top: 80px; text-align: left; font-family: 'Raleway', sans-serif; font-size: 10px;">Hello, I am Dilara Çakmak. I was born in 1999, I am from Bursa and I live in Bursa. 
-    I completed my high school education at Bursa Çekirge Doğa College. 
-    In high school, I took the t-MBA course, which is the structured version of the business administration master's program for high schools, 
-    and successfully completed it. 
-    I successfully completed my university education in Software Engineering (100% English) at Istanbul Aydin University. 
-    I can actively speak English and I know basic German. I love doing research and keeping notes of my research. 
-    I am someone who is interested and curious about learning. 
-    I like to raise the energy of the environment I am in and I do it well because I have always been an energetic person. When I learn new things, 
-    I try them, do research on them and eventually succeed. 
-    Dealing with software is a great job for me. Besides, I like to design ui-ux and code small projects.
-    If I have to talk about my social life: I love spending time with my friends and family, drawing, playing computer games, doing music, 
-    doing handicrafts and playing tennis. That's all the short and concise information about me...</p>
+   
+   <div class="about-text">
+    <h2>ABOUT ME</h2>
+    <h5> Dilara Çakmak / <span>Software Engineer</span></h5>
+    <p>Hello, I am Dilara Çakmak. I was born in 1999, I am from Bursa and I live in Bursa. 
+        I completed my high school education at Bursa Çekirge Doğa College. 
+        In high school, I took the t-MBA course, which is the structured version of the business administration master's program for high schools, 
+        and successfully completed it. 
+        I successfully completed my university education in Software Engineering (100% English) at Istanbul Aydin University. 
+        I can actively speak English and I know basic German. I love doing research and keeping notes of my research. 
+        I am someone who is interested and curious about learning. 
+        I like to raise the energy of the environment I am in and I do it well because I have always been an energetic person. When I learn new things, 
+        I try them, do research on them and eventually succeed. 
+        Dealing with software is a great job for me. Besides, I like to design ui-ux and code small projects.
+       </p>
+        <a href="#" class="btn">Hire Me</a>
     
+</div>
 </section>
 
 
@@ -92,17 +98,15 @@
                     [src]="temp.picture"
                      alt="photo"/>
                     <div class="card-body">
-                        <!-- <h4 class="card-title">{{temp.id}}</h4> -->
                         <p class="card-text" style="font-weight: bold; font-family: 'Raleway', sans-serif; font-size: 20px; color: black;"  >{{temp.title}}</p>
                         <p class="card-text" style="font-weight: bold; font-family: 'Raleway', sans-serif; color: black;" >{{temp.description}}</p>
                         <span class="text-muted float-end" style="  font-weight: bold; font-family: 'Raleway', sans-serif; ">{{temp.date | date:"fullDate"}}</span>
-                    <!-- <a [href]="temp.link" | class="btn btn-info">Show Details</a> -->
-                    <!-- <a (click)="showDetails()" href="temp." class="btn btn-info"></a> -->
-                    <!-- <button class="btn btn-info" (click)="showDetails()">Show Details</button> -->
+                   
                     </div>
                 </div>
             </div>
        
+            
            
 
         </div>

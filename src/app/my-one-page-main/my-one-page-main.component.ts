@@ -14,7 +14,7 @@ import { RouterLink } from '@angular/router';
 export class MyOnePageMainComponent {
 
 MyOnePageContent:MyOnePageContent[]=[
-  {id:1, title:"my work"},
+  {id:1, title:"my services"},
   {id:2, title:"about"},
   {id:3, title:"blog"},
   {id:4, title:"contact"},

@@ -11,9 +11,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './my-one-page-navbar.component.css'
 })
 export class MyOnePageNavbarComponent {
-  // homePage:String ='Ana Sayfa';
 
-// username:String="Dilara Çakmak";
 
 
 
@@ -72,7 +70,6 @@ User: User[]=[
     };
   
     navbar:Array<any>;
-    // search:{};
   }={
   
     isLogin:false,
@@ -91,11 +88,7 @@ User: User[]=[
       {id:4,name:"Blog",link:"#blog_id",fontAwesome:"font-4"},
       {id:5,name:"Contact",link:"#contact_id",fontAwesome:"font-5"},
     ],
-    // search:{
-    //   name:"Search",
-    //   placeholder:"Search",
-    //   type:"text",
-    // }
+   
   }; 
 
   constructor(){}

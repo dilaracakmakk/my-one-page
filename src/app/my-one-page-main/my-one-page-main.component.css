@@ -24,13 +24,18 @@ img:hover{
 
 #business_id i{
   font-size: 5rem;
+  
+}
+.custom-title-color {
+ 
+  font-size: 100px;
 }
 
 #about_me_id{
 color: white!important;
 height: 50rem;
 padding: 2rem;
-background-image: url('../../images/back.jpg');
+background-color: black;
 width: 100%;
 background-position: center;
 background-repeat: no-repeat;
@@ -40,9 +45,44 @@ border-radius: 80px;
 
 }
 
-/* #blog_id {
+#about_me_id p {
+  text-transform: lowercase;
+}
+#about_me_id p::first-letter {
+  text-transform: uppercase; 
 
-  } */
+}
+
+section{
+  font-size: 18px;
+  color:white;
+}
+
+.service-box{
+  padding: 45px 30px;
+  background-color: darkslategray;
+  opacity: 90%;
+  height: 400px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  cursor:pointer;
+  transition: all ease .50s;
+  margin-bottom: 80px;
+}
+.service-box h4{
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase; 
+}
+.service-box p {
+  text-transform: lowercase;
+}
+
+.service-box p:first-letter {
+  text-transform: uppercase; 
+}
+
+
 
 .container {
     padding: 20px; 
@@ -52,7 +92,6 @@ border-radius: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
-    /* önemli */
     margin: -20px; 
   }
   

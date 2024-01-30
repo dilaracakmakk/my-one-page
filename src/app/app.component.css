@@ -1,5 +1,3 @@
-
-
 :root{
     --my_one_page_bg:rgb(0, 0, 0);
     --my_one_page_color:black;
@@ -15,9 +13,11 @@
             scroll-behavior: smooth;
             border: none;
             outline: none;
+            
 }
 html{
     font-size: 15px;
+    
 }
 body{
     font-family: 'Raleway', sans-serif;

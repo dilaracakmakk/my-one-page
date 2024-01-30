@@ -1,7 +1,5 @@
-//blog card
 
 export class blogCard{
-   //field
     id:number;
     title:string;
     text:string;
@@ -10,8 +8,8 @@ export class blogCard{
     date:string;
     link:string;
 
-    //constructor
-constructor(id:number,title:string, text:string, description:string,picture:string,date:string,link:string){
+    
+    constructor(id:number,title:string, text:string, description:string,picture:string,date:string,link:string){
 this.id=id;
 this.title=title;
 this.text=text;

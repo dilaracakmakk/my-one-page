@@ -1,6 +1,6 @@
 <section id="blog_id">
     <a href="/blog">
-    <h2 class="text-center display-4  mb-4 mb-4 ">BLOG</h2>
+    <h2 class="text-center display-4  mb-4 mb-4 "></h2>
     </a>
     <!-- {{MyOnePageContent[2].title | uppercase}} -->
     <ng-container *ngIf="blogCard; then blog; else noBlogCard"></ng-container>
@@ -10,26 +10,168 @@
     
     
     
-        <div class="container">
-            <div class="row">
-                <div *ngFor="let temp of blogCard" class="col-sm-12 col-md-3 col-lg-4">
-                    
-                    <div class="card mb-3">
-                        <img class="card-img-top" 
-                        [src]="temp.picture"
-                         alt="photo"/>
-                        <div class="card-body">
-                            <p class="card-text">{{temp.title}}</p>
-                            <p class="card-text">{{temp.description}}</p>
-                            <span class="text-muted float-end">{{temp.date | date:"fullDate"}}</span>
-                   
-                        </div>
+        <div class="conatiner">
+            <div class="wrap">
+                
+                <div class="box one">
+                    <div class="date">
+                      
+                    </div>
+                    <h1>MUSIC</h1>
+                   <h6 style="color: azure;">Agnes Obel / Riverside</h6>
+                    <div class="poster p1">
+                        <h4>A</h4>
                     </div>
                 </div>
-          
-    
+                
+                <div class="box two">
+                    <div class="date">
+                    </div>
+                    <H1>PS GAME</H1>
+                   <h6 style="color: azure;">Batman: Arkham Knight</h6>
+
+                    <div class="poster p2">
+                        <h4>B</h4>
+                    </div>
+                </div>
+                
+                <div class="box three">
+                    <div class="date">
+                    </div>
+                    <h1>PC GAME</h1>
+                   <h6 style="color: azure;">Counter Strike - 2</h6>
+                    <div class="poster p3">
+                        <h4>C</h4>
+                    </div>
+                </div>
+                
+                <div class="box five">
+                    <div class="date">
+                    </div>
+                    <h1>MUSIC</h1>
+                   <h6 style="color: azure;">Dream Theater - Octavarium</h6>
+
+                    <div class="poster p4">
+                        <h4>D</h4>
+                    </div>
+                </div>
+                
+                <div class="box six">
+                    <div class="date">
+                    </div>
+                    <h1>MUSIC</h1>
+                   <h6 style="color: azure;">Eagles - Hotel California</h6>
+
+                    <div class="poster p5">
+                        <h4>E</h4>
+                    </div>
+                </div>
+                
+                <div class="box seven">
+                    <div class="date">
+                    </div>
+                    <h1>PS GAME</h1>
+                   <h6 style="color: azure;">Far Cry - 6</h6>
+
+                    <div class="poster p6">
+                        <h4>F</h4>
+                    </div>
+                </div>
+                
+                <div class="box eight">
+                    <div class="date">
+                    </div>
+                    <h1>MUSIC</h1>
+                   <h6 style="color: azure;">Gavin DeGraw - Not Over You</h6>
+
+                    <div class="poster p7">
+                        <h4>G</h4>
+                    </div>
+                </div>
+                
+                <div class="box nine">
+                    <div class="date">
+                    </div>
+                    <h1>MUSIC</h1>
+                   <h6 style="color: azure;">Hurts - Wonderful Life </h6>
+
+                    <div class="poster p8">
+                        <h4>H</h4>
+                    </div>
+                </div>
+                
+                <div class="box ten">
+                    <div class="date">
+                    </div>
+                    <h1>PS GAME</h1>
+                   <h6 style="color: azure;">Inscryption</h6>
+
+                    <div class="poster p9">
+                        <h4>I</h4>
+                    </div>
+                </div>
+                
+                <div class="box eleven">
+                    <div class="date">
+                    </div>
+                    <h1>MUSIC</h1>
+                   <h6 style="color: azure;">Jaymes Young - Infinity</h6>
+
+                    <div class="poster p10">
+                        <h4>J</h4>
+                    </div>
+                </div>
+                
+                <div class="box tlv">
+                    <div class="date">
+                    </div>
+                    <h1>PS GAME</h1>
+                   <h6 style="color: azure;">KILLZONE SHADOW FALL</h6>
+
+                    <div class="poster p11">
+                        <h4>K</h4>
+                    </div>
+                </div>
+                
+                <div class="box thirteen">
+                    <div class="date">
+                    </div>
+                    <h1>MUSIC</h1>
+                   <h6 style="color: azure;">Low - Lullaby</h6>
+
+                    <div class="poster p12">
+                        <h4>L</h4>
+                    </div>
+                </div>
+                
+                <div class="box ftn">
+                    <div class="date">
+                    </div>
+                    <h1>PS GAME</h1>
+                   <h6 style="color: azure;">Mortal Kombat 11</h6>
+
+                    <div class="poster p13">
+                        <h4>M</h4>
+                    </div>
+                </div>
+                
+                <div class="box fith">
+                    <div class="date">
+                    </div>
+                    <h1>MUSIC</h1>
+                   <h6 style="color: azure;">Nightcore - Monster</h6>
+
+                    <div class="poster p14">
+                        <h4>N</h4>
+                    </div>
+                </div>
+                
+                
+                
+               
+                
             </div>
-        </div>
+            </div>
     </ng-template>
     
     <ng-template #noBlogCard>

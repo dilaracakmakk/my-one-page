@@ -197,3 +197,53 @@ section{
 
 
 
+
+.container {
+    padding: 20px; 
+
+  }
+  
+  .row {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin: -20px; 
+    
+  }
+  .card {
+    background-color: #0e1220; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease-in-out; 
+}
+  
+.card-body {
+    border: 2px solid rgb(255, 255, 255);
+    opacity: 70%;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .card-title {
+    color: #e3e3e3;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 15px;
+  
+  }
+  
+  .card-text {
+    color: #e3e3e3;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .text-muted {
+    color: #e3e3e3;
+    font-size: 12px;
+    float: right;
+  }

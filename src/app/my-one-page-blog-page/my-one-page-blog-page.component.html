@@ -2,7 +2,6 @@
     <a href="/blog">
     <h2 class="text-center display-4  mb-4 mb-4 "></h2>
     </a>
-    <!-- {{MyOnePageContent[2].title | uppercase}} -->
     <ng-container *ngIf="blogCard; then blog; else noBlogCard"></ng-container>
     
     <ng-template #blog>

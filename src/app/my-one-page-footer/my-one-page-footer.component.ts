@@ -14,7 +14,6 @@ constructor(){
 }
 
 
-//method
 newDateData():string{
 return String (new Date().getFullYear());
 }
